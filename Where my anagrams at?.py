@@ -47,3 +47,5 @@ def anagrams(word, words):
 print(anagrams('abba', ['aabb', 'abcd', 'bbaa', 'dada']))
 print(anagrams('racer', ['crazer', 'carer', 'racar', 'caers', 'racer']))
 
+#other peaple answer
+def anagrams(word, words): return [item for item in words if sorted(item)==sorted(word)]
