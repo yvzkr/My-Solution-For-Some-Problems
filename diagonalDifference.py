@@ -1,4 +1,6 @@
 """
+
+link: https://www.hackerrank.com/challenges/diagonal-difference/problem?h_r=next-challenge&h_v=zen&isFullScreen=true&h_r=next-challenge&h_v=zen
 Given a square matrix, calculate the absolute difference between the sums of its diagonals.
 
 For example, the square matrix  is shown below:
