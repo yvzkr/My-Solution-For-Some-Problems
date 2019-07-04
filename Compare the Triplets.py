@@ -75,5 +75,22 @@ def plusMinus(arr):
 """n = int(input())
 
 arr = list(map(int, input().rstrip().split()))"""
-arr=[-4, 3, -9 ,0 ,4, 1]
-plusMinus(arr)
+"""arr=[-4, 3, -9 ,0 ,4, 1]
+plusMinus(arr)"""
+
+
+
+# Complete the staircase function below.
+def staircase(n):
+    for i in range(1,n+1):
+        print(" "*(n-i)+"#"*i)
+
+
+
+"""
+staircase(6)
+"""
+def miniMaxSum(arr):
+    print(sum(arr)-max(arr), sum(arr)-min(arr))
+
+miniMaxSum([7, 69, 2, 221, 8974])
