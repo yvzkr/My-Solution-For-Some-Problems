@@ -94,3 +94,32 @@ def miniMaxSum(arr):
     print(sum(arr)-max(arr), sum(arr)-min(arr))
 
 miniMaxSum([7, 69, 2, 221, 8974])
+"""
+https://www.hackerrank.com/challenges/birthday-cake-candles/problem?h_r%5B%5D%5B%5D%5B%5D=next-challenge&h_r%5B%5D%5B%5D%5B%5D=next-challenge&h_r%5B%5D%5B%5D%5B%5D=next-challenge&h_v%5B%5D%5B%5D%5B%5D=zen&h_v%5B%5D%5B%5D%5B%5D=zen&h_v%5B%5D%5B%5D%5B%5D=zen&isFullScreen=false&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
+
+"""
+def birthdayCakeCandles(ar):
+    big=max(ar)
+    count=0
+    for i in ar:
+        if i==big:
+            count+=1
+    return count
+
+def timeConversion(s):
+    #
+    # Write your code here.
+    #
+    if s[-2:]=="PM":
+        if s[:2]=="12":
+            return s[:-2]
+        s=str(int(s[:2])+12)+s[2:-2]
+        return s
+    elif s[-2:]=="AM":
+        if s[:2]=="12":
+            s="00"+s[2:-2]
+            return s
+        return s[:-2]
+
+
+print(timeConversion("12:45:54PM"))
